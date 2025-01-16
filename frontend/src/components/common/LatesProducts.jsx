@@ -1,4 +1,4 @@
-import ProductImg from '../../assets/images/Mens/Mens/eight.jpg';
+import ProductImg from '../../assets/images/mens/eight.jpg';
 
 const LatesProducts = () => {
     return (
@@ -61,7 +61,7 @@ const LatesProducts = () => {
 
 export default LatesProducts
 
-// import ProductImg from '../../assets/images/Mens/Mens/eight.jpg';
+// import ProductImg from '../../assets/images/mens/eight.jpg';
 // const products = [
 //     {
 //         id: 1,

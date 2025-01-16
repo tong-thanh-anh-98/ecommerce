@@ -1,5 +1,6 @@
 import Layout from "./common/Layout";
-import ProductImg from '../assets/images/Mens/Mens/eight.jpg';
+import ProductImg from '../assets/images/mens/eight.jpg';
+import { Link } from "react-router-dom";
 
 const Shop = () => {
   return (
@@ -7,8 +8,8 @@ const Shop = () => {
       <div className="container">
         <nav aria-label="breadcrumb" className="py-4">
           <ol className="breadcrumb">
-            <li className="breadcrumb-item active" aria-current="page">Home</li>
-            <li className="breadcrumb-item active" aria-current="page">Shop</li>
+            <li className="breadcrumb-item"><Link to='/'>Home</Link></li>
+            <li className="breadcrumb-item active" aria-current="page"><Link to='#'>Shop</Link></li>
           </ol>
         </nav>
         <div className="row">

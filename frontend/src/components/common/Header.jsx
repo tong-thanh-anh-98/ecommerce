@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../../assets/images/logo.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -11,16 +12,20 @@ const Header = () => {
             </div>
             <Navbar expand="lg" className="bg-body-tertiary">
                 <Container>
-                    <Navbar.Brand href="#home">
+
+                    <Navbar.Brand href="/">
                         <img src={Logo} alt="" width={170} />
                     </Navbar.Brand>
+
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
+
                         <Nav className="ms-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
-                            <Nav.Link href="#home">Mens</Nav.Link>
-                            <Nav.Link href="#link">Woment</Nav.Link>
-                            <Nav.Link href="#link">Kids</Nav.Link>
+                            <Nav.Link href="">Mens</Nav.Link>
+                            <Nav.Link href="">Woment</Nav.Link>
+                            <Nav.Link href="">Kids</Nav.Link>
                         </Nav>
+
                         <div className='nav-right d-flex'>
                             <a href='' className='ms-3'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-person" viewBox="0 0 16 16">
@@ -28,11 +33,11 @@ const Header = () => {
                                 </svg>
                             </a>
 
-                            <a href='' className='ms-3'>
+                            <Link to='/cart' className='ms-3'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" fill="currentColor" className="bi bi-bag" viewBox="0 0 16 16">
                                     <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"></path>
                                 </svg>
-                            </a>
+                            </Link>
                         </div>
                     </Navbar.Collapse>
                 </Container>

@@ -34,7 +34,7 @@ h4{
 a{
     text-decoration: none;
     color: $primary-black;
-    &::hover{
+    &:hover{
         color: $primary-color;
     }
 }
@@ -57,6 +57,12 @@ ul{
 
 .container{
     max-width: 1540px;
+}
+
+.nav-tabs {
+    .nav-link {
+        color: $primary-black;
+    }
 }
 
 .btn{
@@ -104,6 +110,9 @@ header {
                 font-size: 1.2em;
                 font-weight: 500;
                 color: $primary-black;
+                &:hover{
+                    color: $primary-color;
+                }
             }
         }
     }
@@ -180,6 +189,21 @@ footer {
             span {
                 color: rgba($primary-black, 0.5);
             }
+        }
+    }
+}
+
+.product-detail {
+    .mySwiper {
+        .swiper-slide {
+            height: auto !important;
+        }
+    }
+
+    .price {
+        font-weight: bold;
+        span {
+            color: rgba($color: $primary-black, $alpha: 0.20);
         }
     }
 }

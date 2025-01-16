@@ -1,4 +1,4 @@
-import ProductImg from '../../assets/images/Mens/Mens/eleven.jpg';
+import ProductImg from '../../assets/images/mens/eleven.jpg';
 
 const FeaturedProducts = () => {
   return (
